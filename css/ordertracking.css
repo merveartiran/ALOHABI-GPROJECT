@@ -1,0 +1,678 @@
+/* 
+Form Pack
+http://www.templatemo.com/preview/templatemo_418_form_pack
+	
+templatemo 418 form pack
+
+Credit: www.templatemo.com
+	1. General
+	2. login-form-1
+	3. login-form-2
+	4. inline-login
+	5. create-account
+	6. forgot-password
+	7. contact-form-1
+	8. contact-form-2
+	9. payment-form
+	10. Media Queries
+	
+--------------------------------------------*/
+/* 1. General
+--------------------------------------------*/
+/* 
+*, body { font-family: 'Open Sans', sans-serif; }
+body { margin-bottom: 30px; }
+/* h1 {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: normal;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+} */
+/* h2 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: normal;
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #09F;
+}
+
+.green { color: #3C3; }
+.gray { color: #999; }
+
+.form-horizontal .control-label { padding-top: 0; }
+.form-horizontal.templatemo-payment-form .radio.templatemo-no-padding-top {	padding-top: 0; }
+.control-wrapper {
+	position: relative;
+	padding-left: 30px;
+}
+.control-wrapper label.fa-label {
+	position: absolute;
+	left: 4px;
+	top: 6px;
+}
+.form-group:last-child { margin-bottom: 0; }
+.form-horizontal .control-label { margin-bottom: 10px; }
+.table { margin-bottom: 0; }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, 
+.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+.templatemo-form-list-container { max-width: 600px; }
+.templatemo-input-icon-container { position: relative; }
+.templatemo-input-icon-container .fa {
+	color: gray;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.templatemo-input-icon-container input, 
+.templatemo-input-icon-container textarea {
+	padding-left: 30px;
+}
+.templatemo-container {
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #dedede;
+	border-radius: 8px;
+	margin: 0 auto;
+	padding: 30px;
+}
+.templatemo-bg-gray { background-color: #eee; }
+.templatemo-bg-gray h1 { color: rgb(74, 164, 180); }
+.templatemo-bg-image-1 {
+	background-color: rgb(60,60,60);
+	background-image: url(../images/templatemo-bg-1.jpg);	
+}
+.templatemo-bg-image-2 {
+	background-color: rgb(70, 90, 40);
+	background-image: url(../images/templatemo-bg-2.jpg);
+}
+.templatemo-bg-image-1, .templatemo-bg-image-2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;	
+}
+.templatemo-bg-image-1, .templatemo-bg-image-2 { background-size: cover; }
+.font-size-small { font-size: 0.8em; }
+.margin-bottom-15 {	margin-bottom: 15px; }
+.margin-bottom-30 {	margin-bottom: 30px; }
+.form-group { margin-bottom: 20px; }
+.form-group a {	line-height: 34px; }
+.fa { font-size: 16px; }
+.fa.login-with {
+	font-size: 30px;
+	margin: 0 5px;
+}
+.fa-medium { font-size: 20px; }
+.inline-block { display: inline-block; } 
+
+
+/*-------------------------------------
+2. login-form-1
+---------------------------------------*/
+:root {
+
+	/**
+	 * colors
+	 */
+	--openbackground-color: rgb(232, 228, 228);
+	--spanish-gray: hsl(0, 0%, 60%);
+	--sonic-silver: hsl(0, 0%, 47%);
+	--eerie-black: hsl(0, 0%, 13%);
+	--salmon-pink: hsl(353, 60%, 19%);
+	--green-color: rgb(7, 49, 7);
+	--sandy-brown: hsl(29, 39%, 42%);
+	--bittersweet: hsl(0, 100%, 70%);
+	--ocean-green: hsl(152, 51%, 52%);
+	--davys-gray: hsl(0, 0%, 33%);
+	--cultured: hsl(0, 0%, 93%);
+	--white: hsl(0, 100%, 100%);
+	--onyx: hsl(0, 0%, 27%);
+	--open-green: rgba(110, 134, 110, .4);
+	--new-green: rgba(110, 134, 110, .2);
+	--back-color: #eee;
+	/**
+	 * typography
+	 */
+
+	--fs-1: 1.563rem;
+	--fs-2: 1.375rem;
+	--fs-3: 1.25rem;
+	--fs-4: 1.125rem;
+	--fs-5: 1rem;
+	--fs-6: 0.938rem;
+	--fs-7: 0.875rem;
+	--fs-8: 0.813rem;
+	--fs-9: 0.75rem;
+	--fs-10: 0.688rem;
+	--fs-11: 0.625rem;
+
+	--weight-300: 300;
+	--weight-400: 400;
+	--weight-500: 500;
+	--weight-600: 600;
+	--weight-700: 700;
+
+	/**
+	 * border-radius
+	 */
+
+	--border-radius-md: 10px;
+	--border-radius-sm: 5px;
+
+	/**
+	 * transition 
+	 */
+
+	--transition-timing: 0.2s ease;
+
+}
+
+
+
+.templatemo-bg-gray {
+	background-color: var(--back-color);
+
+}
+
+.templatemo-bg-gray h1 {
+	color: var(--green-color);
+	letter-spacing: .3rem;
+	font-family: Roboto;
+	margin-bottom: 3rem;
+}
+
+
+
+.templatemo-login-form-1 {
+	max-width: 500px;
+}
+
+.templatemo-login-form-1 a {
+	color: var(--spanish-gray);
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.templatemo-login-form-1 a:hover {
+	color: var(--salmon-pink);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.templatemo-create-new {
+	color: var(--salmon-pink);
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.templatemo-create-new:hover {
+	color: var(--green-color);
+	font-weight: var(--fs-5);
+	text-decoration: none;
+}
+
+#button-login {
+	margin: none;
+	width: 100%;
+	height: 6vh;
+	border-radius: 2rem;
+	letter-spacing: .3rem;
+	background-color: var(--open-green);
+	color: var(--salmon-pink);
+	padding: 1rem;
+	font-size: var(--fs-1);
+	transition: .3s all ease;
+}
+
+#button-login:hover {
+	background-color: var(--green-color);
+	transform: scaleZ(1.1);
+	color: var(--back-color);
+}
+
+#forgot-text {
+
+	width: 100%;
+
+
+}
+
+.control-wrapper {
+	height: 10vh;
+	display: flex;
+}
+
+.inline-block {
+	padding-left: none;
+
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.inline-block a i {
+	width: 80px;
+	height: 80px;
+}
+
+
+
+#label-login {
+	margin-right: 2rem;
+}
+
+.control-wrapper {
+	margin-bottom: -2rem;
+}
+
+#submit-login-box {
+	margin-bottom: 4rem;
+}
+
+#remember-box {
+	height: 40px;
+	margin-bottom: -1rem;
+}
+
+#background-part {
+	background-color: var(--back-color);
+	max-width: 100%;
+	height: 40vh;
+	margin-top: 10%;
+}
+
+#background-part img {
+	box-shadow: .5rem .5rem .5rem var(--sandy-brown);
+}
+
+#username,
+#password {
+	margin-left: 1rem;
+}
+
+/*-------------------------------------
+3. login-form-2
+---------------------------------------*/
+
+
+/*-------------------------------------
+4. inline-login
+--------------------------------------*/
+
+
+
+/*-------------------------------------
+5. create-account
+---------------------------------------*/
+.templatemo-create-account {
+	background-color: #fff;
+	border: none;
+	max-width: 700px;
+}
+
+.templatemo-create-account label {
+	font-weight: 400;
+}
+
+.templatemo-create-account input[type='checkbox'] {
+	margin-right: 10px;
+	position: relative;
+	top: -1.5px;
+}
+
+.templatemo-radio-group {
+	margin-top: 30px;
+}
+
+
+/*-------------------------------------
+6. forgot-password
+---------------------------------------*/
+.templatemo-forgot-password-form {
+	background-color: var(--back-color);
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+
+#send_password {
+	margin: none;
+	width: 100%;
+	height: 6vh;
+	border-radius: 2rem;
+	letter-spacing: .3rem;
+	background-color: var(--open-green);
+	color: var(--salmon-pink);
+	padding: 1rem;
+	font-size: var(--fs-1);
+	transition: .3s all ease;
+}
+
+#send_password {
+	background-color: var(--green-color);
+	transform: scaleZ(1.1);
+	color: var(--back-color);
+}
+
+.margin-bottom-15 {
+	margin-left: 35%;
+	font-family: roboto;
+}
+
+.back-login {
+	color: var(--salmon-pink);
+}
+
+#back-btn {
+	background-color: var(--spanish-gray);
+	width: 50%;
+	height: 5vh;
+	border-radius: 2rem;
+	border: 1px solid var(--green-color);
+	cursor: pointer;
+	transition: .3s all ease-in;
+
+
+}
+
+#back-btn:hover {
+	scale: 110%;
+	transform: translateY(20%);
+}
+
+.back-login:hover {
+	cursor: pointer;
+	color: var(--salmon-pink);
+	text-decoration: none;
+	transform: translateY(4%);
+}
+
+/*-------------------------------------
+5. create-account
+---------------------------------------*/
+.templatemo-create-account {
+	background-color: #fff;
+	border: none;
+	max-width: 700px;
+}
+
+.templatemo-create-account label {
+	font-weight: 400;
+}
+
+.templatemo-create-account input[type='checkbox'] {
+	margin-right: 10px;
+	position: relative;
+	top: -1.5px;
+}
+
+.templatemo-radio-group {
+	margin-top: 30px;
+}
+
+#genderLabel {
+
+	display: flex;
+
+	flex-wrap: wrap;
+}
+
+#registerBtn {
+	background-color: var(--green-color);
+	color: var(--back-color);
+	height: 40px;
+	border: 1px solid var(--open-green);
+	border-radius: 2rem;
+}
+
+#direction-link-bottom,
+#direction-link {
+
+	color: var(--salmon-pink);
+}
+
+#direction-link-bottom {
+	margin-top: 10%;
+	font-size: 20px;
+	font-family: roboto;
+	font-weight: bold;
+}
+
+#background-part-create {
+	background-color: var(--back-color);
+	max-width: 100%;
+	height: 40vh;
+	margin-top: 5%;
+}
+
+#background-part-create img {
+	box-shadow: .5rem .5rem .5rem var(--sandy-brown);
+}
+
+/*-------------------------------------
+7. contact-form-1
+---------------------------------------*/
+.templatemo-contact-form-1 {
+	background: var(--open-green);
+	border-radius: 8px;
+	color: var(--green-color);
+	max-width: 600px;
+	margin: 30px auto 0 auto;
+	padding: 0 30px 30px 30px;
+}
+
+.templatemo-contact-form-1 h1,
+.templatemo-contact-form-1 p {
+	color: var(--green-color);
+}
+
+.templatemo-contact-form-1 a {
+	color: rgb(40, 40, 11);
+	text-decoration: underline;
+}
+
+.templatemo-contact-form-1 a:hover {
+	color: var(--green-color);
+}
+
+.templatemo-contact-form-1 label {
+	font-weight: 400;
+}
+
+.templatemo-contact-form-1 .form-control {
+	font-size: 16px;
+	padding: 10px 12px 10px 35px;
+}
+
+.templatemo-contact-form-1 input.form-control {
+	height: 45px;
+}
+
+.templatemo-contact-form-1 .fa {
+	font-size: 20px;
+}
+
+.templatemo-contact-form-1 .form-control {
+	background-color: rgba(249, 247, 247, 0.6);
+	border: 1px solid rgba(57, 55, 55, 0.4);
+	color: white;
+}
+
+.templatemo-contact-form-1 .form-control:focus {
+	box-shadow: inset 0 1px 1px rgba(32, 59, 5, 0.9), 0 0 10px rgba(32, 57, 6, 0.7);
+}
+
+.templatemo-contact-form-1 .templatemo-input-icon-container .fa {
+	color: rgb(197, 197, 197);
+	left: 12px;
+	top: 12px;
+}
+
+.templatemo-contact-form-1 .templatemo-input-icon-container .fa-envelope-o {
+	font-size: 18px;
+	top: 14px;
+}
+
+#icon-contact {
+	color: var(--green-color);
+}
+
+.contact-send-btn {
+	width: 100%;
+	color: var(--back-color);
+	height: 40px;
+	border-radius: 2rem;
+	background-color: var(--green-color);
+}
+#contact-heading{
+	
+	display: flex;
+	justify-content:  center;
+	margin-left: -15%;
+}
+
+
+
+/*-------------------------------------
+9. payment-form
+---------------------------------------*/
+.templatemo-payment-form {
+	background-color: #fff;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 30px;
+}
+
+.templatemo-payment-form .control-label {
+	margin-bottom: 10px;
+}
+
+.templatemo-payment-form .btn {
+	width: 150px;
+}
+
+.templatemo-select-container {
+	padding: 0;
+}
+
+.cvv2 {
+	width: 50px;
+	padding: 5px;
+	display: inline-block;
+}
+
+.cvv2-group>div {
+	display: inline-block;
+}
+
+.cvv2-group>div>label {
+	display: block;
+}
+
+.cvv2-group img {
+	vertical-align: bottom;
+}
+
+.templatemo-card-details label {
+	font-weight: 400;
+}
+
+.btn-round {
+	border-radius: 30px;
+}
+
+.templatemo-inline-group {
+	display: inline-block;
+	vertical-align: middle;
+	height: 71px;
+	padding-right: 20px;
+}
+
+.form-horizontal .control-label.text-left {
+	text-align: left;
+}
+
+.radio-inline {
+	margin-right: 10px;
+}
+
+.radio-inline+.radio-inline {
+	margin-left: 0;
+}
+
+.templatemo-radio-container {
+	margin-left: 15px;
+}
+
+
+/*-------------------------------------
+10. Media Queries
+---------------------------------------*/
+@media screen and (max-width: 767px) {
+	.templatemo-header .col-md-12 {
+		line-height: 20px;
+	}
+
+	.templatemo-header .btn {
+		margin-bottom: 15px;
+	}
+
+	.templatemo-container {
+		padding: 15px;
+	}
+
+	.control-wrapper label.fa-label {
+		top: 6px;
+	}
+
+	.templatemo-header form {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.templatemo-login-form-2 .templatemo-one-signin {
+		border-right: none;
+		border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+	}
+
+	.templatemo-login-form-2 .templatemo-other-signin {
+		padding-top: 30px;
+	}
+
+	.templatemo-login-form-2 .form-group:last-child {
+		margin-bottom: 30px;
+	}
+
+	.templatemo-create-account .col-md-6,
+	.templatemo-create-account .col-md-12 {
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}
+
+	.templatemo-create-account .form-group {
+		margin-bottom: 0;
+	}
+
+	.templatemo-radio-group {
+		margin-top: 0;
+	}
+
+	.templatemo-contact-form-2 .checkbox {
+		margin-bottom: 15px;
+	}
+
+	.templatemo-contact-form-2 {
+		padding: 30px 30px 0 30px;
+	}
+
+	.templatemo-radio-container {
+		margin-left: 30px;
+	}
+}
